@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.container{
+    max-height: 500px;
+    max-width: 350px;
+    background-color: aquamarine;
+    margin: 20px 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.search{
+    display: flex;
+    justify-content: space-around;
+}
+
+.search #city{
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+    border: none;
+}
+.search #search-btn{
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.wheather-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px;
+}
+.wheather-info img{
+   height: 150px;
+   width: 150px;
+}
+
+.wheather-info h1{
+    font-size: 80px;
+}
+.wheather-info h2{
+    font-size: 30px;
+}
+
+
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.left{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    color: white;
+}
+
+.left img{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    color: white;
+}
+
+.right img{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+
