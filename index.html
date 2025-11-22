@@ -8,49 +8,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <center>
-<body>
-    <div class="container">
 
-        <div class="search">
-            <input type="text" placeholder="enter city" id="city">
-            <button id="search-btn">S</button>
-        </div>
+    <body>
+        <h1>WEATHER-APP</h1>
+        <div class="container">
 
-        <div class="wheather-info">
-            <img src="images/clouds.png" alt="">
-            <h1>24*c</h1>
-            <h2>City Name</h2>
-        </div>
-
-        <div class="details">
-            <div class="left">
-                <img src="images/humidity.png" alt="">
-                <div class="humdity">
-                    <h2>60%</h2>
-                    <p>humidity</p>
-                </div>
-
-
+            <div class="search">
+                <input type="text" placeholder="enter city" id="city">
+                <button id="search-btn"><img src="images/search.png" alt=""></button>
             </div>
-            <div class="right">
-                <img src="images/wind.png" alt="">
-                <div class="speed">
-                    <h2>1.54km/h</h2>
-                    <p>Wind Speed</p>
+            <div id="info">
+            <div class="wheather-info">
+                <img src="images/clouds.png" alt="" id="weatherIcon">
+                <h1 class="temparature">24*c</h1>
+                <h2 class="city">City Name</h2>
+            </div>
+
+            <div class="details">
+                <div class="left">
+                    <img src="images/humidity.png" alt="">
+                    <div class="humdity">
+                        <h2 class="humidityspeed">60%</h2>
+                        <p>humidity</p>
+                    </div>
+
+
+                </div>
+                <div class="right">
+                    <img src="images/wind.png" alt="">
+                    <div class="speed">
+                        <h2 class="windspeed">1.54km/h</h2>
+                        <p>Wind Speed</p>
+                    </div>
                 </div>
             </div>
+            </div>
+
+
         </div>
 
-    </div>
 
 
 
 
+        <script src="script.js">
 
-    <script src="script.js">
-
-    </script>
-</body>
+        </script>
+    </body>
 </center>
 
 </html>

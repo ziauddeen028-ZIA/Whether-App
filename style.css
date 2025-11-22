@@ -1,90 +1,107 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
+body{
+    background-color:darkorchid;
+}
 
-.container{
+.container {
+    min-height: 100px;
     max-height: 500px;
     max-width: 350px;
-    background-color: aquamarine;
+    background-color:  rgb(187, 128, 243);;
     margin: 20px 20px;
     padding: 15px;
     border-radius: 15px;
 }
 
-.search{
+.search {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+
 }
 
-.search #city{
+.search #city {
     border-radius: 20px;
     padding: 10px;
     width: 80%;
     border: none;
-}
-.search #search-btn{
-    border-radius: 50px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+    
 }
 
-.wheather-info{
+
+
+.search #search-btn {
+    border-radius: 50px;
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.search #search-btn img {}
+
+.wheather-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 20px;
 }
-.wheather-info img{
-   height: 150px;
-   width: 150px;
+
+.wheather-info img {
+    height: 150px;
+    width: 150px;
 }
 
-.wheather-info h1{
+.wheather-info h1 {
     font-size: 80px;
 }
-.wheather-info h2{
+
+.wheather-info h2 {
     font-size: 30px;
 }
 
 
 
-.details{
+.details {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
-.left{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-    color: white;
-}
-
-.left img{
-    height: 40px;
-    width: 40px;
-    margin: 10px;
-}
-
-
-.right{
+.left {
     display: flex;
     justify-content: space-around;
     margin: 10px;
     color: white;
 }
 
-.right img{
+.left img {
     height: 40px;
     width: 40px;
     margin: 10px;
 }
 
 
+.right {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    color: white;
+}
+
+.right img {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
