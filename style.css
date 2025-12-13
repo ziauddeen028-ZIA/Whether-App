@@ -4,37 +4,62 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-body{
-    background-color:darkorchid;
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: relative;
+}
+
+h1{
+    color: white;
+    margin: 10px;
+    text-align: center;
 }
 
 .container {
-    min-height: 100px;
+    min-height: 200px;
     max-height: 500px;
+    min-width: 350px;
     max-width: 350px;
-    background-color:  rgb(187, 128, 243);;
+    background-color: transparent;
     margin: 20px 20px;
     padding: 15px;
     border-radius: 15px;
+    border: 2px solid rgb(137, 125, 121);
+    position: absolute;
+    left: 50%;
+    
+    transform: translate(-50%);
 }
 
 .search {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
     
+
 
 }
 
 .search #city {
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
     width: 80%;
     border: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+.search #city:focus{
+    outline: none;
     
 }
-
 
 
 .search #search-btn {
@@ -47,9 +72,9 @@ body{
     display: flex;
 }
 
-.search #search-btn img {}
 
-.wheather-info {
+
+.weather-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,16 +83,16 @@ body{
     margin: 20px;
 }
 
-.wheather-info img {
+.weather-info img {
     height: 150px;
     width: 150px;
 }
 
-.wheather-info h1 {
+.weather-info h1 {
     font-size: 80px;
 }
 
-.wheather-info h2 {
+.weather-info h2 {
     font-size: 30px;
 }
 

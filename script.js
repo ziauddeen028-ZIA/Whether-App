@@ -6,15 +6,15 @@ let searchbtn = document.getElementById("search-btn");
 let weatherIcon = document.getElementById("weatherIcon");
 let infobox = document.getElementById("info")
 
-infobox.style.display="none";
+infobox.style.display = "none";
 
 async function checkWeather(city) {
     let response = await fetch(apiUrl + city + `&appid=${apiKey}&units=metric`);
     console.log(response);
-    infobox.style.display="block";
+    infobox.style.display = "block";
     if (response.status == 404) {
         alert("Something Wrong");
-        
+
     }
     else {
         let data = await response.json();
@@ -49,6 +49,17 @@ async function checkWeather(city) {
         else if (data.weather[0].main == "Mist") {
             weatherIcon.src = "images/mist.png";
         }
+        else if (data.weather[0].main == "Fog") {
+            weatherIcon.src = "images/mist.png";
+        }
+        else if (data.weather[0].main == "Haze") {
+            weatherIcon.src = "images/mist.png";
+        }
+
+        else {
+            console.log("Weather condition not handled:", data.weather[0].main);
+        }
+
 
     }
 }
@@ -56,6 +67,7 @@ async function checkWeather(city) {
 searchbtn.addEventListener("click", () => {
     let cityName = searchInput.value;
     checkWeather(cityName);
+    document.getElementById("heading").style.display="none";
 });
 
 
